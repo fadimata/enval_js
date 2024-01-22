@@ -1,0 +1,131 @@
+.SS {
+    display: flex;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    flex-direction: column;
+
+}
+
+.logo {
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+
+
+}
+
+.logo img {
+
+    width: 400px;
+}
+
+.I1 {
+    width: 30rem;
+    height: 3rem;
+    border-radius: 10px;
+    border: 1px solid #8f8a8a;
+    margin-bottom: 60px;
+    text-decoration: none;
+    font-size: large;
+
+}
+
+.I1:hover {
+    border: 2px solid #4A96A6;
+}
+
+.I2 {
+    width: 30rem;
+    height: 3rem;
+    border-radius: 10px;
+    border: 1px solid #8f8a8a;
+    font-size: large;
+}
+
+.I2:hover {
+    border: 2px solid #4A96A6;
+}
+
+.f {
+
+    margin-right: 15rem;
+    color: #767676;
+}
+
+.button {
+    margin-top: 50px;
+    width: 30rem;
+    height: 3rem;
+    border-radius: 10px;
+    border: 1px solid #4A96A6;
+    background-color: #4A96A6;
+    cursor: pointer;
+    color: white;
+
+}
+
+.button a {
+    color: #4A96A6;
+    text-decoration: none;
+
+}
+
+.button:hover {
+    background-color: #fff;
+    border: 2px solid #4A96A6;
+    color: #4A96A6;
+
+}
+
+
+
+.button a:hover {
+    color: #4A96A6;
+
+}
+
+@media (max-width:768px) {
+
+    .SS {
+        top: 10%;
+        left: 20%;
+    }
+
+}
+
+@media (max-width:375px) {
+
+    .SS {
+        top: 20%;
+        left: 5%;
+
+    }
+
+    .I1 {
+        width: 20rem;
+
+    }
+
+    .I2 {
+        width: 20rem;
+
+    }
+
+
+    .button {
+        width: 21rem;
+
+    }
+
+    .logo img {
+
+        width: 300px;
+    }
+
+    .f {
+        margin-right: 10rem;
+    }
+}
