@@ -12,12 +12,25 @@
 </head>
 
 <body>
-    <section class="SS">
-        <div class="notification">
+    
 
+    <div class="notification" id="notif">
+        <div class="titre_notification">
+            <h2 id="title"></h2>
         </div>
+        <p id="alertContent"></p>
+    </div>
+
+    <div id="maModal" class="modal">
+        <p id="messageAlerte"></p>
+        <p id="tentativesRestantes"></p>
+        <!-- Aucun bouton pour fermer manuellement, car la modale se fermera automatiquement -->
+      </div>
+
+    <section class="SS">
+
         <div class="logo">
-            <img src="Logo/Enval logo.png" alt="page de connexion Enval" >
+            <img src="Logo/Enval logo.png" alt="page de connexion Enval">
         </div>
         <div>
             <input class="I1" type="email" name="" id="mail" placeholder="E-mail">
@@ -25,17 +38,17 @@
         <div>
             <input class="I2" type="password" name="" id="motDePass" placeholder="Mot de passe">
         </div>
-        <div >
+        <div>
             <a href="" class="f">Mot de passe oublié ?</a>
         </div>
 
         <div>
             <a href="">
-            <button onclick="login()" class="button">
-                Connexion 
+                <button id="loginBtn" class="button">
+                    Connexion
 
-            </button>
-        </a>
+                </button>
+            </a>
         </div>
     </section>
 
