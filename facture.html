@@ -77,15 +77,19 @@
                     <table>
                         <thead>
                             <th style="font-size: 25px;letter-spacing: 1px;font-weight: 800;">Facture</th>
-                            <th colspan="3"><div class=" "style=""><label for="search-box">
-                                <input type="search-box" class=" search" aria-label="Search bar"placeholder="&#xF52A;" 
+                            <th colspan="3">
+                                <div class=" "style=""><label for="search-box">
+                                <input type="search-box" class="search" id="search" aria-label="Search bar"placeholder="&#xF52A;" 
                                  style="font-family: bootstrap-icons;"></label>
                               </div></th>
-                            <th></th>
-                            <th ></th>
-                            <th ></th>
+                            <tr class="titre" >
+                            <th style="background-color: #17A2B1; color: aliceblue;">Facture</th>
+                            <th style="background-color: #17A2B1; color: aliceblue;">Laboratoire</th>
+                            <th style="background-color: #17A2B1; color: aliceblue;">Date</th>
+                            <th style="background-color: #17A2B1; color: aliceblue;">Cliquez pour voir le rapport</th>
+                            </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="tBodyFactur">
                             <tr>
                                 <td style="font-size: 18px;width: 49rem;text-align: center;font-weight: bold;border-right: solid 1px;">Facture</td>
                                 <td style="font-size: 18px;width: 25em;padding: 0 40px 0 0;text-align: center;font-weight: bold;border-right: solid 1px;">Laboratoire</td>
@@ -107,7 +111,7 @@
     </div>
 
     </div>
-
+    <script src="facture.js"></script>
     <!-- Fin du conainer général -->
 </body>
 
