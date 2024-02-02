@@ -38,7 +38,7 @@
                     <!-- Debut de la list 2 -->
                     <div class="item__list2">
                         <ul class="item__ul1">
-                            <li><a href="#"><i class="fa-solid fa-gear"></i><span>Paramètres du compte</span></a></li>
+                            <li><a href="paramCompt.html"><i class="fa-solid fa-gear"></i><span>Paramètres du compte</span></a></li>
                             <li><a href="index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i><span>Déconnexion</span></a> </li>
 
                         </ul>
@@ -79,9 +79,16 @@
                             <th ></th>
                             <th colspan="2"style="font-size:26px;font-weight: 500;letter-spacing: 1px;">Suivi des échantillons</th>
                             <th></th>
-                            <th ></th>
-                            <th ></th>
+                            <th></th>
+                            <tr>
+                                <td class="trieLot" style="font-size: 18px;width: 49rem;text-align: center;font-weight: bold;border-right: solid 1px;background-color: #17A2B1;color: white;">Lot<i class=" fa-solid fa-turn-down"></i></td>
+                                <td class="trieEtat" style="font-size: 18px;width: 25em;padding: 0 40px 0 0;text-align: center;font-weight: bold;border-right: solid 1px;background-color: #17A2B1;color: white;">Etat<i class=" fa-solid fa-turn-down"></i></td>
+                                <td class="trieDate" style="font-size: 18px;width:10em ;text-align: center;font-weight: bold;border-right: solid 1px;background-color: #17A2B1;color: white;">Date prévue<i class=" fa-solid fa-turn-down"></i></td>
+                                <td class="trieStatut" style="font-size: 18px;width:rem ;padding: 0 45px ;text-align: center;font-weight: bold;border-right: solid 1px;background-color: #17A2B1;color: white;">Rapport<i class=" fa-solid fa-turn-down"></i></td>
+                                <td  style="font-size: 18px;width:30rem ;text-align: center;font-weight: bold;background-color: #17A2B1;color: white">Cliquez pour voir le rapport</td>
+                            </tr>
                         </thead>
+                       <tbody id="tbodySuivi">
                         <tr>
                             <td style="font-size: 18px;width: 49rem;text-align: center;font-weight: bold;border-right: solid 1px;">Lot</td>
                             <td style="font-size: 18px;width: 25em;padding: 0 40px 0 0;text-align: center;font-weight: bold;border-right: solid 1px;">Etat</td>
@@ -89,76 +96,8 @@
                             <td style="font-size: 18px;width:rem ;padding: 0 45px ;text-align: center;font-weight: bold;border-right: solid 1px;">Rapport</td>
                             <td  style="font-size: 18px;width:30rem ;text-align: center;font-weight: bold;">Cliquez pour voir le rapport</td>
                         </tr>
-                        <tr>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;">TE202303001</td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;">Reçu</td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;">12/03/2023</td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;">Non disponible</td>
-                            <td style="text-align: center;"><a href="suividetail.html"><button class="btn_com"style="">Voir</button></a></td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;">E20230223</td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;"><a href="suividetail.html"><button class="btn_com">Voir</button></a></td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;">TE20230190</td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;"><a href="suividetail.html"><button class=" btn_com">Voir</button></a></td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;">Carbonate</td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;"><a href="suividetail.html"><button class="btn_com">Voir</button></a></td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;">Chlourire</td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;"><a href="suividetail.html"><button class="btn_com">Voir</button></a></td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;">CO2 libre</td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;"><a href="suividetail.html"><button class="btn_com">Voir</button></a></td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;">Conductivité electrique</td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;"><a href="suividetail.html"><button class="btn_com">Voir</button></a></td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;">pH/Temperature</td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;"><a href="suividetail.html"><button class="btn_com">Voir</button></a></td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;">Couleur Brute</td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;"><a href="suividetail.html"><button class="btn_com">Voir</button></a></td>
-                        </tr>
-                        <tr>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;">Cyanure libre</td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;border-right: solid 1px #8f8a8a;"></td>
-                            <td style="text-align: center;"><a href="suividetail.html"><button class="btn_com">Voir</button></a></td>
-                        </tr>
+                       </tbody>
+                        
                     </table>
 
                     
@@ -166,13 +105,14 @@
                 </div>
             </div>
 
+
             <!-- fin du box -->
         </div>
     </div>
 
     </div>
-
-    <!-- Fin du conainer général -->
+<script src="suivi.js"></script>
+    
 </body>
 
 </html>
