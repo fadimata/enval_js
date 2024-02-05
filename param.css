@@ -21,17 +21,9 @@
 .modififeFormulaire{
     width: 100%;
     display: flex;
+justify-content: space-around;
 }
-.input{
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 60%;
-     background-color: antiquewhite;
-     margin-top: 10px;
-}
+
 .Avatar{
     margin-top: 50px;
     display: flex;
@@ -71,7 +63,6 @@ textarea{
 .avatarBTN{
     display: flex;
     flex-direction: column;
-    height: 30px;
     width: 200px;
 }
 .btn1{
@@ -126,7 +117,6 @@ textarea{
 
   .Avatar{
     width: 200px;
-    height: 500px;
     border-radius: 50%;
   }
   

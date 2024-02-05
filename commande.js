@@ -176,3 +176,5 @@ function recherche(e) {
     let searchText = inputSearch.value.toLowerCase();
     recherche(searchText);
   });
+const avatarNav = document.getElementById('avatarNav');
+  avatarNav.src = JSON.parse(localStorage.getItem('source'));
