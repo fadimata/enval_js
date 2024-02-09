@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dachboard</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../param.css">
+    <link rel="stylesheet" href="demo.css" />
+    <link rel="stylesheet" href="content.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="grid__left">
+        <div class="sidebar">
+            <!-- Le contentu image -->
+            <div class="item__image">
+                <img src="../logo.png" alt="">
+            </div>
+            <div class="list">
+                <!-- Debut de la list 1 -->
+                <div class="item__list1">
+                    <ul class=" ">
+                        <li><a href="../dachboard.html"><i class="fa-solid fa-chart-simple"></i><span>Dachboard</span>
+                            </a>
+                        </li>
+                        <li><a href="../facture.html"><i class="fa-solid fa-peace"></i><span>Facture</span></a></li>
+                        <li><a href="../commande.html"><i
+                                    class="fa-solid fa-cart-shopping"></i><span>Commande</span></a>
+                        </li>
+                        <li><a href="../suivi.html"><i class="fa-solid fa-bag-shopping"></i><span><span>Suivi</span></a>
+                        </li>
+                        <li><a href="../serviceclient.html"><i class="fa-solid fa-comment-dots"></i><span>Service
+                                    client</span></a></li>
+                    </ul>
+                </div>
+                <!-- Fin de la list 1 -->
+                <!-- Debut de la list 2 -->
+                <div class="item__list2">
+                    <ul class="item__ul1">
+                        <li><a href="./paramCompt.html"><i class="fa-solid fa-gear"></i><span>Paramètres du
+                                    compte</span></a></li>
+                        <li><a href="../index.html"><i
+                                    class="fa-solid fa-arrow-right-from-bracket"></i><span>Déconnexion</span></a> </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="grid__right">
+            <div class="navbar">
+                <!-- Burger -->
+
+                <!-- Fin burger -->
+                <!-- Debut des image a droite -->
+                <div class="cloche">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
+                        <path
+                            d="M224 0c-17.7 0-32 14.3-32 32V49.9C119.5 61.4 64 124.2 64 200v33.4c0 45.4-15.5 89.5-43.8 124.9L5.3 377c-5.8 7.2-6.9 17.1-2.9 25.4S14.8 416 24 416H424c9.2 0 17.6-5.3 21.6-13.6s2.9-18.2-2.9-25.4l-14.9-18.6C399.5 322.9 384 278.8 384 233.4V200c0-75.8-55.5-138.6-128-150.1V32c0-17.7-14.3-32-32-32zm0 96h8c57.4 0 104 46.6 104 104v33.4c0 47.9 13.9 94.6 39.7 134.6H72.3C98.1 328 112 281.3 112 233.4V200c0-57.4 46.6-104 104-104h8zm64 352H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7s18.7-28.3 18.7-45.3z" />
+                    </svg>
+                </div>
+                <div class="avatar">
+                    <img id="avatarNav" style="border-radius: 50%;" src="../Logo/avatar.jpg" alt="Avatar d'utilisateur">
+                </div>
+                <!-- Fin des image a droite -->
+
+
+            </div>
+        </div>
+
+        <div class="grid__right">
+
+            <div class="box__client" style="padding: 20px;">
+
+                <h1>Parametre du compte</h1>
+                <div class="divRetour">
+                    <a href="dachboard.html">
+                        <h3><i class="fa-solid fa-arrow-left"></i> Retour au tableau de bord</h3>
+                    </a>
+                    <div class="divBTN">
+                        <button class="btn1" id="modifPass">Modifier le mot de passe</button>
+                        <button class="btn2" id="supprimerCompte">Supprimer le compte</button>
+                    </div>
+                </div>
+
+                <div class="modififeFormulaire">
+
+                    <div class="input">
+                        <h4>Modifier le profile</h4>
+                        <div>
+                            <input class="I1 " type="text" id="Identifiant" placeholder="Identifiant ">
+                        </div>
+                        <div>
+                            <input class="I2" type="password" id="Email" placeholder="Email">
+                        </div>
+                        <div id="biographie" class="editor-wrapper" style="margin-top: 20px;">
+                            <div id="cke5-user-interface-bottom-toolbar-demo">
+                                <div id="cke5-user-interface-bottom-toolbar-demo-content">
+                                    <div id="editor-content">
+
+                                    </div>
+                                </div>
+                                <div id="cke5-user-interface-bottom-toolbar-demo-toolbar-container"></div>
+                            </div>
+                        </div>
+
+                        <button id="connexion" class="btn1">connexion</button>
+                    </div>
+
+                </div>
+                <div class="imageFormulaire">
+                    <h1 style=" margin-bottom: 20px;">Ton avatar</h1>
+                    <img style="border-radius: 100%;" width="200px" height="200px" id="imgAvatar"
+                        src="../parametre/paramCompt.html" alt="">
+                    <div class="Avatar">
+                        <input style="display: none" type="file" name="image" id="image" accept="image/*" />
+                    </div>
+                    <div class="avatarBTN">
+                        <button onclick="modifierPhoto()" id="modifierMotPass" class="btn1">Modifier la photo</button>
+                        <br>
+                        <button onclick="supprimPhoto()" id="supprimPhoto" class="btn2">Supprimer la photo</button>
+                    </div>
+                </div>
+
+
+                <!-- formulaire modifier mot de pass -->
+                <div class="Modifier_Mot_Pass"
+                    style="border: 1px solid rgb(19, 201, 201); width: 350px; border-radius: 5px; display: flex; flex-direction: column; margin-left: 1100px; margin-top: -300px; display: none;">
+                    <h3 style="background-color:rgb(19, 201, 201) ;text-align: center;">Formulaire modifier mot de pass
+                    </h3>
+                    <div class="inputModif" style="padding: 10px;">
+
+                        <div>
+                            <input class="I2" style="width: 300px;" type="password" name="" id="AncienPass"
+                                placeholder="Ancien Mot de passe">
+                        </div>
+                        <div>
+                            <input class="I2" style="width: 300px;" type="password" name="" id="NouveauPass"
+                                placeholder="Nouveau Mot de passe">
+                        </div>
+                        <div>
+                            <input class="I2" style="width: 300px;" type="password" name="" id="ConfirmPass"
+                                placeholder="Confirmation">
+                        </div>
+
+
+                        <div style="display: flex; justify-content: center;">
+                            <a href="">
+                                <button id="envoyerModif" class="btn1"
+                                    style="margin-top: 15px; justify-content: center; ">Envoyer</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <!-- fin du box -->
+    </div>
+
+    </div>
+    <script src="./dist/main.js"></script>
+    <script src="../param.js"></script>
+</body>
+
+</html>
