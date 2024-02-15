@@ -44,7 +44,6 @@ const IncorrectLoginController = ()=>{
   },2000)
 
   }
-  
 }
 // fonction pour afficher the count
 const DisplayCounter= ()=>{
@@ -57,18 +56,23 @@ const DisplayCounter= ()=>{
    }, 60000)
   }
 }
+
 // on l'appel à l'extérieur pour faire persister la fonction
 DisplayCounter()
 
 //fonction pour controller les requetes de connexionns
 const LoginController = ()=>{
   if ((mail.value === user1.username && mot_de_passe.value === user1.pwd)|| (mail.value === user2.username && mot_de_passe.value === user2.pwd) ) {
-    location.href = 'dachboard.html'
+    localStorage.setItem("loggedInUser", JSON.stringify({ mail, mot_de_passe }));
+    location.href = '../dachboard.html'
   }else{
     IncorrectLoginController()
  
   }
 }
+
+
+
 // evenement sur le bouton de connexion
 loginBtn.addEventListener('click', (e)=>{
   e.preventDefault()

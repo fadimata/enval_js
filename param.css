@@ -13,10 +13,13 @@
 .I1{
     width: 550px;
     height: 30px;
+    border: 1px solid;
+    margin-bottom: 10px;
 }
 .I2{
     width: 550px;
     height: 30px;
+    margin-top: 10px;
 }
 .modififeFormulaire{
     width: 100%;
@@ -44,11 +47,11 @@ textarea{
     margin-top: 10px;
     width: 550px;
 }
-.input p{
-    color: gray
+.input {
+    padding: 10px;
 }
 .input input{
-    border: none;
+    border: 1px solid gray;
     border-radius: 5px;
     padding: 10px;
 }
@@ -120,3 +123,14 @@ textarea{
     border-radius: 50%;
   }
   
+  /* #nomUtilisateur{
+    border: 1px solid ;
+  }
+  #ancienMotDePasse{
+    border: 1px solid ;
+  } */
+
+  .imageFormulaire{
+    margin-top: -450px;
+    margin-left: 150px;
+  }

@@ -114,3 +114,10 @@ inputSearch.addEventListener("input", function () {
   let searchText = inputSearch.value.toLowerCase();
   recherche(searchText);
 });
+
+
+
+
+// navbar profile
+const avatarNav = document.getElementById('avatarNav');
+  avatarNav.src = JSON.parse(localStorage.getItem('source'));

@@ -21,7 +21,7 @@
             <div class="sidebar">
                 <!-- Le contentu image -->
                 <div class="item__image">
-                    <img src="Logo/logo.png" alt="">
+                    <img src="./logo.png" alt="">
                 </div>
                 <div class="list">
                     <!-- Debut de la list 1 -->
@@ -64,7 +64,7 @@
                     </svg>
                 </div>
                 <div class="avatar">
-                    <img src="Logo/avatar.jpg" alt="Avatar d'utilisateur">
+                    <img id="avatarNav" style="border-radius: 50%;" src="Logo/avatar.jpg" alt="Avatar d'utilisateur">
                 </div>
                 <!-- Fin des image a droite -->
 
@@ -101,6 +101,12 @@
 
     </div>
 
+
+    <script>
+        // navbar profile
+const avatarNav = document.getElementById('avatarNav');
+  avatarNav.src = JSON.parse(localStorage.getItem('source'));
+    </script>
     <!-- Fin du conainer général -->
 </body>
 
