@@ -67,7 +67,7 @@ const user1 = {
   pwd: "sab123",
   username: "sofi",
 };
-const user2 = {
+let user2 = {
   pwd: "fadi123",
   username: "fadi",
 };
@@ -81,7 +81,10 @@ envoyerModif.addEventListener('click', (e) => {
   let nouveauValeur = nouveauPass.value;
   let ancienValeur = ancienPass.value;
   let confirmerValeur = confirmer.value;
-
+  const userInLocalStorage = localStorage.getItem('loggedInUser')
+  if(userInLocalStorage) {
+    user2 = JSON.parse(userInLocalStorage)
+  }
   // Vérification des informations de connexion
   if (ancienValeur === user2.pwd && nouveauValeur === confirmerValeur) {
     user2.pwd = nouveauValeur;

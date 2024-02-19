@@ -12,7 +12,7 @@ const user1 = {
   pwd: "sab123",
   username: "sofi",
 };
-const user2 = {
+let user2 = {
   pwd: "fadi123",
   username: "fadi",
 };
@@ -62,8 +62,12 @@ DisplayCounter()
 
 //fonction pour controller les requetes de connexionns
 const LoginController = ()=>{
-  if ((mail.value === user1.username && mot_de_passe.value === user1.pwd)|| (mail.value === user2.username && mot_de_passe.value === user2.pwd) ) {
-    localStorage.setItem("loggedInUser", JSON.stringify({ mail, mot_de_passe }));
+  const userInLocalStorage = localStorage.getItem('loggedInUser')
+  if(userInLocalStorage) {
+    user2 = JSON.parse(userInLocalStorage)
+  }
+  if (mail.value === user2.username && (mot_de_passe.value === user2.pwd )) {
+    // localStorage.setItem("loggedInUser", JSON.stringify({ mail, mot_de_passe }));
     location.href = '../dachboard.html'
   }else{
     IncorrectLoginController()
