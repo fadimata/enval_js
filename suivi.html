@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -27,19 +27,25 @@
                     <!-- Debut de la list 1 -->
                     <div class="item__list1">
                         <ul class=" ">
-                            <li><a href="dachboard.html"><i class="fa-solid fa-chart-simple"></i><span> Dachboard</span></a></li>
+                            <li><a href="dachboard.html"><i class="fa-solid fa-chart-simple"></i><span>
+                                        Dachboard</span></a></li>
                             <li><a href="facture.html"><i class="fa-solid fa-peace"></i><span>Facture</span></a></li>
-                            <li><a href="commande.html"><i class="fa-solid fa-cart-shopping"></i><span>Commande</span></a></li>
+                            <li><a href="commande.html"><i
+                                        class="fa-solid fa-cart-shopping"></i><span>Commande</span></a></li>
                             <li><a href="suivi.html"><i class="fa-solid fa-bag-shopping"></i><span>Suivi</span></a></li>
-                            <li><a href="serviceclient.html"><i class="fa-solid fa-comment-dots"></i><span>Service client</span></a></li>
+                            <li><a href="serviceclient.html"><i class="fa-solid fa-comment-dots"></i><span>Service
+                                        client</span></a></li>
                         </ul>
                     </div>
                     <!-- Fin de la list 1 -->
                     <!-- Debut de la list 2 -->
                     <div class="item__list2">
                         <ul class="item__ul1">
-                            <li><a href="./parametre/paramCompt.html"><i class="fa-solid fa-gear"></i><span>Paramètres du compte</span></a></li>
-                            <li><a href="index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i><span>Déconnexion</span></a> </li>
+                            <li><a href="./parametre/paramCompt.html"><i class="fa-solid fa-gear"></i><span>Paramètres
+                                        du compte</span></a></li>
+                            <li><a href="index.html"><i
+                                        class="fa-solid fa-arrow-right-from-bracket"></i><span>Déconnexion</span></a>
+                            </li>
 
                         </ul>
                     </div>
@@ -76,32 +82,54 @@
                 <div class="table__box" style="overflow-x:auto;">
                     <table>
                         <thead>
-                            <th ></th>
-                            <th colspan="2"style="font-size:26px;font-weight: 500;letter-spacing: 1px;">Suivi des échantillons</th>
+                            <th></th>
+                            <th colspan="2" style="font-size:26px;font-weight: 500;letter-spacing: 1px;">Suivi des
+                                échantillons</th>
                             <th></th>
                             <th></th>
                             <tr>
-                                <td class="trieLot" style="font-size: 18px;width: 49rem;text-align: center;font-weight: bold;border-right: solid 1px;background-color: #17A2B1;color: white;">Lot<i class=" fa-solid fa-turn-down"></i></td>
-                                <td class="trieEtat" style="font-size: 18px;width: 25em;padding: 0 40px 0 0;text-align: center;font-weight: bold;border-right: solid 1px;background-color: #17A2B1;color: white;">Etat<i class=" fa-solid fa-turn-down"></i></td>
-                                <td class="trieDate" style="font-size: 18px;width:10em ;text-align: center;font-weight: bold;border-right: solid 1px;background-color: #17A2B1;color: white;">Date prévue<i class=" fa-solid fa-turn-down"></i></td>
-                                <td class="trieStatut" style="font-size: 18px;width:rem ;padding: 0 45px ;text-align: center;font-weight: bold;border-right: solid 1px;background-color: #17A2B1;color: white;">Rapport<i class=" fa-solid fa-turn-down"></i></td>
-                                <td  style="font-size: 18px;width:30rem ;text-align: center;font-weight: bold;background-color: #17A2B1;color: white">Cliquez pour voir le rapport</td>
+                                <td class="trieLot"
+                                    style="font-size: 18px;width: 49rem;text-align: center;font-weight: bold;border-right: solid 1px;background-color: #17A2B1;color: white;">
+                                    Lot<i class=" fa-solid fa-turn-down"></i></td>
+                                <td class="trieEtat"
+                                    style="font-size: 18px;width: 25em;padding: 0 40px 0 0;text-align: center;font-weight: bold;border-right: solid 1px;background-color: #17A2B1;color: white;">
+                                    Etat<i class=" fa-solid fa-turn-down"></i></td>
+                                <td class="trieDate"
+                                    style="font-size: 18px;width:10em ;text-align: center;font-weight: bold;border-right: solid 1px;background-color: #17A2B1;color: white;">
+                                    Date prévue<i class=" fa-solid fa-turn-down"></i></td>
+                                <td class="trieStatut"
+                                    style="font-size: 18px;width:rem ;padding: 0 45px ;text-align: center;font-weight: bold;border-right: solid 1px;background-color: #17A2B1;color: white;">
+                                    Rapport<i class=" fa-solid fa-turn-down"></i></td>
+                                <td
+                                    style="font-size: 18px;width:30rem ;text-align: center;font-weight: bold;background-color: #17A2B1;color: white">
+                                    Cliquez pour voir le rapport</td>
                             </tr>
                         </thead>
-                       <tbody id="tbodySuivi">
-                        <tr>
-                            <td style="font-size: 18px;width: 49rem;text-align: center;font-weight: bold;border-right: solid 1px;">Lot</td>
-                            <td style="font-size: 18px;width: 25em;padding: 0 40px 0 0;text-align: center;font-weight: bold;border-right: solid 1px;">Etat</td>
-                            <td style="font-size: 18px;width:10em ;text-align: center;font-weight: bold;border-right: solid 1px;">Date prévue</td>
-                            <td style="font-size: 18px;width:rem ;padding: 0 45px ;text-align: center;font-weight: bold;border-right: solid 1px;">Rapport</td>
-                            <td  style="font-size: 18px;width:30rem ;text-align: center;font-weight: bold;">Cliquez pour voir le rapport</td>
-                        </tr>
-                       </tbody>
-                        
+                        <tbody id="tbodySuivi">
+                            <tr>
+                                <td
+                                    style="font-size: 18px;width: 49rem;text-align: center;font-weight: bold;border-right: solid 1px;">
+                                    Lot</td>
+                                <td
+                                    style="font-size: 18px;width: 25em;padding: 0 40px 0 0;text-align: center;font-weight: bold;border-right: solid 1px;">
+                                    Etat</td>
+                                <td
+                                    style="font-size: 18px;width:10em ;text-align: center;font-weight: bold;border-right: solid 1px;">
+                                    Date prévue</td>
+                                <td
+                                    style="font-size: 18px;width:rem ;padding: 0 45px ;text-align: center;font-weight: bold;border-right: solid 1px;">
+                                    Rapport</td>
+                                <td style="font-size: 18px; width: 30rem; text-align: center; font-weight: bold;">
+                                    <a href="suiviDetail.html" id="voirButton">
+                                        <button  type="button">Voir</button>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+
                     </table>
 
-                    
-        
+
                 </div>
             </div>
 
@@ -111,8 +139,8 @@
     </div>
 
     </div>
-<script src="suivi.js"></script>
-    
+    <script src="suivi.js" defer></script>
+
 </body>
 
 </html>

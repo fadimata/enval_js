@@ -40,6 +40,7 @@ FILE_INPUT.addEventListener("change", () => {
 });
 function modifierPhoto() {
   FILE_INPUT.click();
+  alert(' Modifier votre avatar')
 }
 // sauvegarde
 imgAvatar.src = JSON.parse(localStorage.getItem("source"));
@@ -48,11 +49,12 @@ function supprimPhoto() {
   imgAvatar.src = "";
   localStorage.setItem("source", "");
   avatarNav.src = "";
+  alert('La photo a été supprimer avec succes')
 }
 // navbar profile
 avatarNav.src = JSON.parse(localStorage.getItem("source"));
 
-// ==============================================================
+// =========================== Modifier le profil ===================================
 
 connexion.addEventListener("click", () => {
 
@@ -62,7 +64,7 @@ connexion.addEventListener("click", () => {
 
 });
 
-// ==================================================================ModifierMotPass
+// ========================================= ModifierMotPass =========================
 const user1 = {
   pwd: "sab123",
   username: "sofi",
@@ -81,6 +83,7 @@ envoyerModif.addEventListener('click', (e) => {
   let nouveauValeur = nouveauPass.value;
   let ancienValeur = ancienPass.value;
   let confirmerValeur = confirmer.value;
+
   const userInLocalStorage = localStorage.getItem('loggedInUser')
   if(userInLocalStorage) {
     user2 = JSON.parse(userInLocalStorage)
@@ -110,6 +113,14 @@ btnSupprimerCompte.addEventListener('click', (e) => {
   if (confirm("Êtes-vous sûr de vouloir supprimer votre compte ?")) {
     // Si l'utilisateur confirme, supprimer le compte
     supprimerCompte();
+    
   }
 });
 
+
+
+ClassicEditor
+.create( document.querySelector( '#editor' ) )
+.catch( error => {
+    console.error( error );
+} );

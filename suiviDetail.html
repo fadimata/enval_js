@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body style="background-color:  #E7F9FD;">
+    <button data-drawer-target="separator-sidebar" data-drawer-toggle="separator-sidebar"
+        aria-controls="separator-sidebar" type="button"
+        class="inline-flex items-center p-2 mt-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+        <span class="sr-only">Open sidebar</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
+            <path clip-rule="evenodd" fill-rule="evenodd"
+                d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z">
+            </path>
+
+        </svg>
+    </button>
+    <aside id="separator-sidebar"
+        class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
+        aria-label="Sidebar">
+        <div class="h-full px-3 py-4 overflow-y-auto bg-white">
+            <img class=" mr-2" src="./inval.png" alt="logo">
+            <div class="item__list1">
+                <ul class=" ">
+                    <li><a href="dachboard.html"><i class="fa-solid fa-chart-simple"></i><span>Dachboard</span>
+                        </a></li>
+                    <li><a href="facture.html"><i class="fa-solid fa-peace"></i><span>Facture</span></a></li>
+                    <li><a href="commande.html"><i
+                                class="fa-solid fa-cart-shopping"></i><span>Commande</span></a></li>
+                    <li><a href="suivi.html"><i class="fa-solid fa-bag-shopping"></i><span>Suivi</span></a></li>
+                    <li><a href="serviceclient.html"><i class="fa-solid fa-comment-dots"></i><span>Service
+                                client</span></a></li>
+                </ul>
+            </div>
+            <div class="item__list2">
+                <ul class="item__ul1">
+                    <li><a href="./parametre/paramCompt.html"><i class="fa-solid fa-gear"></i><span>Paramètres du compte</span></a></li>
+                    <li><a href="index.html"><i
+                                class="fa-solid fa-arrow-right-from-bracket"></i><span>Déconnexion</span></a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </aside>
+    <div class="p-1 sm:ml-64">
+        <div class="flex justify-end navbar h-12 w-90 bg-white">
+
+            <div id="toast-top-right"
+                class="flex justify-end items-center w-full max-w-xs p-4 space-x-4 text-gray-500  divide-x divide-gray-200  -right-40"
+                role="alert">
+                <span class="material-symbols-outlined">
+                    notifications
+                </span>
+                <img src="./b2.png" alt="" style="width: 10%;">
+
+            </div>
+
+
+        </div>
+        <div>
+            <h1 class="text-center mb-5 " style="font-size: 25px; margin-top: 15px;">Rapport : R-TE202303001</h1>
+        </div>
+        <div style="background-color:white;">
+
+            <div class="relative overflow-x-auto p-6">
+                <div class="   " style=" text-align: center;">
+                    <img class="w-60  m-5" src="/lubrifiant.png" alt="logo">
+                    <h1 class="text-center mb-5 " style="font-size: 24px;">Rapport d’analyse (Moteur)</h1>
+
+                </div>
+                <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400"
+                    style="border: 2px solid black;">
+                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                        <tr style="background-color: #E7F9FD;">
+                            <th scope="col" class="px-6 py-3">
+                                Information Client
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-white  dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row"
+                                class="px-6 py-4  font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Nom du client :
+                            </th>
+                            <td class="px-6 py-4">
+                                BOLUDA
+                            </td>
+                            <td class="px-6 py-4 text-gray-900">
+                                Site de travail :
+                            </td>
+                            <td class="px-6 py-4">
+                                ABIDJAN
+                            </td>
+
+                        </tr>
+                        <tr class="bg-white  dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Nom du Navire :
+                            </th>
+                            <td class="px-6 py-4">
+                                V8 SUPERENZO
+                            </td>
+                            <td class="px-6 py-4 text-gray-900">
+                                Compartiment :
+                            </td>
+                            <td class="px-6 py-4">
+                                MOOTEUR PRINCIPAL BABORD
+                            </td>
+
+                        </tr>
+                        <tr class="bg-white dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Marque :
+                            </th>
+                            <td class="px-6 py-4">
+                                CATERPILLAR
+                            </td>
+                            <td class="px-6 py-4 text-gray-900">
+                                Marque huile :
+                            </td>
+                            <td class="px-6 py-4">
+                                PREMIUM
+                            </td>
+
+                        </tr>
+                        <tr class="bg-white  dark:bg-gray-800 dark:border-gray-700 border-b">
+                            <th scope="row"
+                                class=" px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Numéro de serie :
+                            </th>
+                            <td class="px-6 py-4">
+
+                            </td>
+                            <td class="px-6 py-4 text-gray-900">
+                                Grade huile :
+                            </td>
+                            <td class="px-6 py-4">
+                                20W50
+                            </td>
+
+                        </tr>
+
+
+                    </tbody>
+                </table><br>
+                <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400"
+                    style="border: 2px solid black;">
+                    <thead class=" text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                        <tr style="background-color: #E7F9FD;">
+                            <th scope="col" class="px-6 py-3 ">
+                                Inforamtion Echantillons
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-white  dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Code échantillon :
+                            </th>
+                            <td class="px-6 py-4">
+                                06-269-0030
+                            </td>
+                            <td class="px-6 py-4">
+                                06-196-0014
+                            </td>
+                            <td class="px-6 py-4">
+                                06-115-0016
+                            </td>
+                            <td class="px-6 py-4">
+                                05-316-0020
+                            </td>
+
+                        </tr>
+                        <tr class="bg-white dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Date de prélèvement :
+                            </th>
+                            <td class="px-6 py-4">
+                                01/09/2022
+                            </td>
+                            <td class="px-6 py-4">
+                                11/07/2022
+                            </td>
+                            <td class="px-6 py-4">
+                                15/04/2022
+                            </td>
+                            <td class="px-6 py-4">
+                                18/11/2021
+                            </td>
+
+                        </tr>
+                        <tr class="bg-white dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Date d’analyse :
+                            </th>
+                            <td class="px-6 py-4">
+                                28/09/2022
+                            </td>
+                            <td class="px-6 py-4">
+                                21/07/2022
+                            </td>
+                            <td class="px-6 py-4">
+                                25/04/2022
+                            </td>
+                            <td class="px-6 py-4">
+                                18/11/2021
+                            </td>
+
+                        </tr>
+                        <tr class="bg-white  dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Compte horaire H :
+                            </th>
+                            <td class="px-6 py-4">
+                                -
+                            </td>
+                            <td class="px-6 py-4">
+                                -
+                            </td>
+                            <td class="px-6 py-4">
+                                -
+                            </td>
+                            <td class="px-6 py-4">
+                                -
+                            </td>
+
+
+                        </tr>
+
+                        <tr class="bg-white  dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Age huile H
+                            </th>
+                            <td class="px-6 py-4">
+                                -
+                            </td>
+                            <td class="px-6 py-4">
+                                -
+                            </td>
+                            <td class="px-6 py-4">
+                                -
+                            </td>
+                            <td class="px-6 py-4">
+                                -
+                            </td>
+
+                        </tr>
+                        <tr class="bg-white dark:bg-gray-800">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Vidange :
+                            </th>
+                            <td class="px-6 py-4">
+                                -
+                            </td>
+                            <td class="px-6 py-4">
+                                -
+                            </td>
+                            <td class="px-6 py-4">
+                                -
+                            </td>
+                            <td class="px-6 py-4">
+                                -
+                            </td>
+                        </tr>
+                        <tr class="bg-white dark:bg-gray-800">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Appoint :
+                            </th>
+                            <td class="px-6 py-4">
+                                40
+                            </td>
+                            <td class="px-6 py-4">
+                                29
+                            </td>
+                            <td class="px-6 py-4">
+                                35.7
+                            </td>
+                            <td class="px-6 py-4">
+                                127
+                            </td>
+                        </tr>
+
+                        <tr class="bg-white dark:bg-gray-800">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Filtre changé :
+                            </th>
+                            <td class="px-6 py-4">
+                                -
+                            </td>
+                            <td class="px-6 py-4">
+                                -
+                            </td>
+                            <td class="px-6 py-4">
+                                -
+                            </td>
+                            <td class="px-6 py-4">
+                                -
+                            </td>
+
+
+                        </tr>
+                    </tbody>
+                </table><br>
+                <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400"
+                    style="border: solid 2px black;">
+                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                        <tr style="background-color: #E7F9FD;"
+                            class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Paramètres
+                            </th>
+                            <td class="px-6 py-4">
+                                Méthodes
+                            </td>
+                            <td class="px-6 py-4">
+                                Unités
+                            </td>
+                            <td class="px-6 py-4">
+                                Limites
+                            </td>
+                            <td class="px-6 py-4">
+                                Résultats
+                            </td>
+                            <td class="px-6 py-4">
+
+                            </td>
+                            <td class="px-6 py-4">
+
+                            </td>
+                            <td class="px-6 py-4">
+
+                            </td>
+
+                        </tr>
+                        <tr style="background-color: rgb(135, 130, 130);"
+                            class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Metals / Wear / Contaminants / Additives
+                            </th>
+                            <td class="px-6 py-4">
+
+                            </td>
+                            <td class="px-6 py-4">
+
+                            </td>
+                            <td class="px-6 py-4">
+
+                            </td>
+                            <td class="px-6 py-4">
+
+                            </td>
+                            <td class="px-6 py-4">
+
+                            </td>
+                            <td class="px-6 py-4">
+
+                            </td>
+                            <td class="px-6 py-4">
+
+                            </td>
+
+
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Aluminium
+                            </th>
+                            <td class="px-6 py-4">
+                                ASTM D5185
+                            </td>
+                            <td class="px-6 py-4">
+                                ppm
+                            </td>
+                            <td class="px-6 py-4">
+                                <8 /16< </td>
+                            <td class="px-6 py-4">
+                                0.1
+                            </td>
+                            <td class="px-6 py-4">
+                                1
+                            </td>
+                            <td class="px-6 py-4">
+                                0
+                            </td>
+                            <td class="px-6 py-4">
+                                1.32
+                            </td>
+
+
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Chrome
+                            </th>
+                            <td class="px-6 py-4">
+                                ASTM D5185
+
+                            </td>
+                            <td class="px-6 py-4">
+                                ppm
+                            </td>
+                            <td class="px-6 py-4">
+                                <5 /25< </td>
+                            <td class="px-6 py-4">
+                                0.2
+                            </td>
+                            <td class="px-6 py-4">
+                                0
+                            </td>
+                            <td class="px-6 py-4">
+                                0
+                            <td class="px-6 py-4">
+                                0.22
+                            </td>
+
+
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Cuivre
+                            </th>
+                            <td class="px-6 py-4">
+                                ASTM D5185
+
+                            </td>
+                            <td class="px-6 py-4">
+                                ppm
+                            </td>
+                            <td class="px-6 py-4">
+                                <15 /45< </td>
+                            <td class="px-6 py-4" style="background-color: crimson;">
+                                204
+                            </td>
+                            <td class="px-6 py-4" style="background-color: crimson;">
+                                178
+                            </td>
+                            <td class="px-6 py-4" style="background-color: crimson;">
+                                141
+                            </td>
+                            <td class="px-6 py-4" style="background-color: crimson;">
+                                288
+                            </td>
+
+
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Etain
+                            </th>
+                            <td class="px-6 py-4">
+                                ASTM D5185
+
+                            </td>
+                            <td class="px-6 py-4">
+                                ppm
+                            </td>
+                            <td class="px-6 py-4">
+                                <15 /30< </td>
+                            <td class="px-6 py-4">
+                                0
+                            </td>
+                            <td class="px-6 py-4">
+                                0
+                            </td>
+                            <td class="px-6 py-4">
+                                0
+                            </td>
+                            <td class="px-6 py-4">
+                                0.28
+                            </td>
+
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Fer
+                            </th>
+                            <td class="px-6 py-4">
+                                ASTM D5185
+                            </td>
+                            <td class="px-6 py-4">
+                                ppm
+                            </td>
+                            <td class="px-6 py-4">
+                                <45 /95< </td>
+                            <td class="px-6 py-4">
+                                12.6
+                            </td>
+                            <td class="px-6 py-4">
+                                13
+                            </td>
+                            <td class="px-6 py-4">
+                                5.43
+                            </td>
+                            <td class="px-6 py-4">
+                                10.2
+                            </td>
+
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Nickel
+                            </th>
+                            <td class="px-6 py-4">
+                                ASTM D5185
+                            </td>
+                            <td class="px-6 py-4">
+                                ppm
+                            </td>
+                            <td class="px-6 py-4">
+                                <5 /15< </td>
+                            <td class="px-6 py-4">
+                                1.2
+                            </td>
+                            <td class="px-6 py-4">
+                                1
+                            </td>
+                            <td class="px-6 py-4">
+                                0
+                            </td>
+                            <td class="px-6 py-4">
+                                0
+                            </td>
+
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Chrome
+                            </th>
+                            <td class="px-6 py-4">
+                                ASTM D5185
+                            </td>
+                            <td class="px-6 py-4">
+                                ppm
+                            </td>
+                            <td class="px-6 py-4">
+                                <25 /80< </td>
+                            <td class="px-6 py-4">
+                                0
+                            </td>
+                            <td class="px-6 py-4">
+                                1
+                            </td>
+                            <td class="px-6 py-4">
+                                0.80
+                            </td>
+                            <td class="px-6 py-4">
+                                0.67
+                            </td>
+
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Chrome
+                            </th>
+                            <td class="px-6 py-4">
+                                ASTM D5185
+                            </td>
+                            <td class="px-6 py-4">
+                                ppm
+                            </td>
+                            <td class="px-6 py-4">
+                                <25 /80< </td>
+                            <td class="px-6 py-4">
+                                0
+                            </td>
+                            <td class="px-6 py-4">
+                                1
+                            </td>
+                            <td class="px-6 py-4">
+                                0.80
+                            </td>
+                            <td class="px-6 py-4">
+                                0.67
+                            </td>
+
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Silicium
+                            </th>
+                            <td class="px-6 py-4">
+                                ASTM D5185
+                            </td>
+                            <td class="px-6 py-4">
+                                ppm
+                            </td>
+                            <td class="px-6 py-4">
+                                <20 /40< </td>
+                            <td class="px-6 py-4">
+                                3.58
+                            </td>
+                            <td class="px-6 py-4">
+                                3
+                            </td>
+                            <td class="px-6 py-4">
+                                0
+                            </td>
+                            <td class="px-6 py-4">
+                                2.38
+                            </td>
+
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Titan
+                            </th>
+                            <td class="px-6 py-4">
+                                ASTM D5185
+                            </td>
+                            <td class="px-6 py-4">
+                                ppm
+                            </td>
+                            <td class="px-6 py-4">
+                                <10 </td>
+                            <td class="px-6 py-4">
+                                0
+                            </td>
+                            <td class="px-6 py-4">
+                                0
+                            </td>
+                            <td class="px-6 py-4">
+                                0
+                            </td>
+                            <td class="px-6 py-4">
+                                0
+                            </td>
+
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Vadanium
+                            </th>
+                            <td class="px-6 py-4">
+                                ASTM D5185
+                            </td>
+                            <td class="px-6 py-4">
+                                ppm
+                            </td>
+                            <td class="px-6 py-4">
+                                <10 <td class="px-6 py-4">
+                                    0
+                            </td>
+                            <td class="px-6 py-4">
+                                0
+                            </td>
+                            <td class="px-6 py-4">
+                                0
+                            </td>
+                            <td class="px-6 py-4">
+                                0
+                            </td>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Titan
+                            </th>
+                            <td class="px-6 py-4">
+                                ASTM D5185
+                            </td>
+                            <td class="px-6 py-4">
+                                ppm
+                            </td>
+                            <td class="px-6 py-4">
+                                <5 <td class="px-6 py-4">
+                                    0
+                            </td>
+                            <td class="px-6 py-4">
+                                0
+                            </td>
+                            <td class="px-6 py-4">
+                                0
+                            </td>
+                            <td class="px-6 py-4">
+                                0
+                            </td>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Argent
+                            </th>
+                            <td class="px-6 py-4">
+                                ASTM D5185
+                            </td>
+                            <td class="px-6 py-4">
+                                ppm
+                            </td>
+                            <td class="px-6 py-4">
+                                <10 </td>
+                            <td class="px-6 py-4">
+                                0
+                            </td>
+                            <td class="px-6 py-4">
+                                0
+                            </td>
+                            <td class="px-6 py-4">
+                                0
+                            </td>
+                            <td class="px-6 py-4">
+                                0
+                            </td>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                sodmium
+                            </th>
+                            <td class="px-6 py-4">
+                                ASTM D5185
+                            </td>
+                            <td class="px-6 py-4">
+                                ppm
+                            </td>
+                            <td class="px-6 py-4">
+                                -
+                            </td>
+                            <td class="px-6 py-4" style="background-color: orange;">
+                                0
+                            </td>
+                            <td class="px-6 py-4" style="background-color: orange;">
+                                0
+                            </td>
+                            <td class="px-6 py-4" style="background-color: orange;">
+                                0
+                            </td>
+                            <td class="px-6 py-4" style="background-color: red">
+                                0
+                            </td>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Calcium
+                            </th>
+                            <td class="px-6 py-4">
+                                ASTM D5185
+                            </td>
+                            <td class="px-6 py-4">
+                                ppm
+                            </td>
+                            <td class="px-6 py-4">
+                                -
+                            </td>
+                            <td class="px-6 py-4">
+                                3577
+                            </td>
+                            <td class="px-6 py-4">
+                                2895
+                            </td>
+                            <td class="px-6 py-4">
+                                1158
+                            </td>
+                            <td class="px-6 py-4">
+                                3220
+                            </td>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Magnesium
+                            </th>
+                            <td class="px-6 py-4">
+                                ASTM D5185
+                            </td>
+                            <td class="px-6 py-4">
+                                ppm
+                            </td>
+                            <td class="px-6 py-4">
+                                -
+                            </td>
+                            <td class="px-6 py-4">
+                                16.7
+                            </td>
+                            <td class="px-6 py-4">
+                                18
+                            </td>
+                            <td class="px-6 py-4">
+                                30.4
+                            </td>
+                            <td class="px-6 py-4">
+                                162
+                            </td>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Phosphore
+                            </th>
+                            <td class="px-6 py-4">
+                                ASTM D5185
+                            </td>
+                            <td class="px-6 py-4">
+                                ppm
+                            </td>
+                            <td class="px-6 py-4">
+                                -
+                            </td>
+                            <td class="px-6 py-4">
+                                756
+                            </td>
+                            <td class="px-6 py-4">
+                                713
+                            </td>
+                            <td class="px-6 py-4">
+                                712
+                            </td>
+                            <td class="px-6 py-4">
+                                727
+                            </td>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Zinc
+                            </th>
+                            <td class="px-6 py-4">
+                                ASTM D5185
+                            </td>
+                            <td class="px-6 py-4">
+                                ppm
+                            </td>
+                            <td class="px-6 py-4">
+                                -
+                            </td>
+                            <td class="px-6 py-4">
+                                808
+                            </td>
+                            <td class="px-6 py-4">
+                                588
+                            </td>
+                            <td class="px-6 py-4">
+                                596
+                            </td>
+                            <td class="px-6 py-4">
+                                753
+                            </td>
+                        <tr style="background-color:#878282;"
+                            class="bg-white border-b  dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row"
+                                class="px-6 py-4  font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Oil Condition / Particule count
+                            </th>
+                            <td class="px-6 py-4">
+
+                            </td>
+                            <td class="px-6 py-4">
+
+                            </td>
+                            <td class="px-6 py-4">
+
+                            </td>
+                            <td class="px-6 py-4">
+
+                            </td>
+                            <td class="px-6 py-4">
+
+                            </td>
+                            <td class="px-6 py-4">
+
+                            </td>
+                            <td class="px-6 py-4">
+
+                            </td>
+
+
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Viscosité à 100
+                            </th>
+                            <td class="px-6 py-4">
+                                ASTM D445
+                            </td>
+                            <td class="px-6 py-4">
+                                mm2/s
+                            </td>
+                            <td class="px-6 py-4" style="background-color: orange;">
+                                <12,5 / 21< </td>
+                            <td class="px-6 py-4" style="background-color: orange;">
+                                18.2
+                            </td>
+                            <td class="px-6 py-4" style="background-color: orange;">
+                                18.1
+                            </td>
+                            <td class="px-6 py-4" style="background-color: orange;">
+                                17.6
+                            </td>
+                            <td class="px-6 py-4" style="background-color: red">
+                                20.3
+                            </td>
+
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                TBN
+                            </th>
+                            <td class="px-6 py-4">
+                                ASTM D2896
+                            </td>
+                            <td class="px-6 py-4">
+                                mgKOH/g
+                            </td>
+                            <td class="px-6 py-4">
+
+                            <td class="px-6 py-4">
+                                5.69
+                            </td>
+                            <td class="px-6 py-4">
+                                3.21
+                            </td>
+                            <td class="px-6 py-4">
+                                47
+                            </td>
+                            <td class="px-6 py-4">
+                                9
+                            </td>
+
+
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Point éclair
+                            </th>
+                            <td class="px-6 py-4">
+                                ASTM D2896
+
+                            </td>
+                            <td class="px-6 py-4">
+                                ppm
+                            </td>
+                            <td class="px-6 py-4">
+                                °C
+                            <td class="px-6 py-4">
+                                >200
+                            </td>
+                            <td class="px-6 py-4" style="background-color: orange;">
+                                182
+                            </td>
+                            <td class="px-6 py-4">
+                                218
+                            <td class="px-6 py-4">
+                                220
+                            </td>
+
+
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Suie
+                            </th>
+                            <td class="px-6 py-4">
+                                ASTM E2412
+
+                            </td>
+                            <td class="px-6 py-4">
+                                ufm
+                            </td>
+                            <td class="px-6 py-4">
+                                60
+
+                            <td class="px-6 py-4">
+                                5.77
+                            </td>
+                            <td class="px-6 py-4">
+                                15.1
+                            </td>
+                            <td class="px-6 py-4">
+                                0
+                            </td>
+                            <td class="px-6 py-4">
+                                16.4
+                            </td>
+
+
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Eau
+                            </th>
+                            <td class="px-6 py-4">
+                                Crackle Test
+
+                            </td>
+                            <td class="px-6 py-4">
+                                %
+                            </td>
+                            <td class="px-6 py-4">
+                                N
+                            <td class="px-6 py-4">
+
+                            </td>
+                            <td class="px-6 py-4">
+                                N
+                            </td>
+                            <td class="px-6 py-4">
+                                N
+                            </td>
+                            <td class="px-6 py-4">
+                                N
+                            </td>
+
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Dilution
+                            </th>
+                            <td class="px-6 py-4">
+
+                            </td>
+                            <td class="px-6 py-4">
+                                -
+                            </td>
+                            <td class="px-6 py-4">
+
+                            <td class="px-6 py-4">
+                                N
+                            </td>
+                            <td class="px-6 py-4">
+                                N
+                            </td>
+                            <td class="px-6 py-4">
+                                N
+                            </td>
+                            <td class="px-6 py-4">
+                                N
+
+                            </td>
+                </table><br>
+                <div style=" display: flex;">
+                    <div
+                        style="height: 150px; width: 50%;background-image: linear-gradient(to right, #2b9b27, #5b990e, #7b9600, #979200, #af8d00, #bb8500, #c67c00, #d17200, #d36400, #d45300, #d54001, #d52709); margin-top: 20px; margin-left: 20px;">
+                        <h1 style="font-size: 35px; margin-left: 90%; padding-top: 50px;">X</h1>
+                    </div>
+                    <div style="margin-left: 20px; margin-top: 20px;">
+                        <p> <strong> Commentaires :</strong> Le taux de Cuivre reste très élevé. Le Sodium toujours aussi élevé
+                            : à suivre.
+        
+                            Vérifier ce compartiment et réparer si nécessaire. Voir les causes de présence de Sodium dans
+        
+                            l huile. Changer l huile et le filtre. Refaire u prélèvement pour contrôle. </p>
+                        <br>
+                        <br>
+                        <p> Diagnostic établi sous réserve de représentativité de léchantillon et des informations fournies.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    </div>
+    <tbody>
+
+    </tbody>
+</body>
+
+</html>

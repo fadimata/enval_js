@@ -6,60 +6,70 @@ let suiviData = [
     etat : "Recu",
     Date: "29/03/2023",
     rapport: "Disponnible",
+    button : 'voir'
   },
   {
     lot: "CO2 libre",
     etat : "Non Recu",
     Date: "04/03/2023",
     rapport: "Disponnible",
+    button : 'voir'
   },
   {
     lot: "Couleur brute",
     etat : "Recu",
     Date: "21/03/2023",
     rapport: "Non Disponnible",
+    button : 'voir'
   },
   {
     lot: "Conductivité electrique",
     etat : "Recu",
     Date: "14/03/2023",
     rapport: "Non Disponnible",
+    button : 'voir'
   },
   {
     lot: "Clhorire",
     etat : "Non Recu",
     Date: "31/03/2023",
     rapport: "Non Disponnible",
+    button : 'voir'
   },
   {
     lot: "w",
     etat : "Recu",
     Date: "30/03/2023",
     rapport: "Disponnible",
+    button : 'voir'
   },
   {
     lot: "E20230190",
     etat : "Recu",
     Date: "13/03/2023",
     rapport: "Disponnible",
+    button : 'voir'
   },
   {
     lot: "pH/Temperature",
     etat : "Non Recu",
     Date: "01/03/2023",
     rapport: "Non Disponnible",
+     button : 'voir'
   },
   {
     lot: "z",
     etat : "Recu",
     Date: "16/03/2023",
     rapport: "Non Disponnible",
+     button : 'voir'
   },
   {
     lot: "y",
     etat : "Non Recu",
     Date: "11/03/2023",
     rapport: "Disponnible",
+     button : 'voir'
   },
  
 ];
@@ -71,7 +81,10 @@ suiviData.forEach((element) => {
   <td style="font-size: 18px;width: 25em;padding: 0 40px 0 0;text-align: center;font-weight: bold;border-right: solid 1px;">${element.etat}</td>
   <td style="font-size: 18px;width:10em ;text-align: center;font-weight: bold;border-right: solid 1px;">${element.Date}</td>
   <td style="font-size: 18px;width:rem ;padding: 0 45px ;text-align: center;font-weight: bold;border-right: solid 1px;">${element.rapport}</td>
-  <td  style="font-size: 18px;width:30rem ;text-align: center;font-weight: bold;"><button>Voir</button> </td>
+  <td  style="font-size: 18px;width:30rem ;text-align: center;font-weight: bold;"><a href="suiviDetail.html" >
+  <button type="button"> ${element.button}</button>
+
+  </a></td>
 </tr>`;
 });
 // ==================================================================
@@ -122,7 +135,13 @@ function trieTable(label, croissant) {
       <td style="font-size: 18px;width: 25em;padding: 0 40px 0 0;text-align: center;font-weight: bold;border-right: solid 1px;">${element.etat}</td>
       <td style="font-size: 18px;width:10em ;text-align: center;font-weight: bold;border-right: solid 1px;">${element.Date}</td>
       <td style="font-size: 18px;width:rem ;padding: 0 45px ;text-align: center;font-weight: bold;border-right: solid 1px;">${element.rapport}</td>
-      <td style="font-size: 18px;width:30rem ;text-align: center;font-weight: bold;"><button>Voir</button> </td>
+      <td style="font-size: 18px; width: 30rem; text-align: center; font-weight: bold;">
+      <a href="suiviDetail.html" id="voirButton">
+      <button type="button"> ${voir}</button>
+
+      </a>
+      </td>
+  
     </tr>`;
     });
   }
